@@ -289,9 +289,10 @@ def main():
 	while conteudo != '':
 		if(conteudo[-1] =='\n'):
 			conteudo = conteudo[:-1] 
+		conteudo = conteudo.split(" ")
 		dicClasses[conteudo[0]] = [0,1.0] #adiciono a classe no dicionario
 		tabela.append([conteudo[0]]) #classe
-		tabela[i].append(read_arq_arg(conteudo[1:]))# lista de palavras
+		tabela[i].append(read_arq_arg(conteudo[1]))# lista de palavras
 		conteudo = arq.readline()
 		i+=1
 	arq.close()
@@ -300,7 +301,7 @@ def main():
 	
 	classe = imprimeClasses(dicClasses)
 	
-	write_arq("index.txt",classe+""+argumento[0]) #escreve a classe no arquivo index
+	write_arq("index.txt",classe+" "+argumento[0]) #escreve a classe no arquivo index
 	fim = time.time()
 	print("Tempo de execução: ",end="")
 	print(fim-ini)

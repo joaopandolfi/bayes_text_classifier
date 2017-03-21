@@ -33,12 +33,12 @@ Elementos separadores de palavras
 
 Arquivo de index das classes
 ```
-<classe><arquivo>
+<classe> <arquivo>
 Exemplo:
-1sportv.txt
-1sportnews.txt
-2rural.txt
-3leucemia.txt
-2mandioca.txt
-3celulas_tronco.txt
+1 sportv.txt
+1 sportnews.txt
+2 rural.txt
+3 leucemia.txt
+2 mandioca.txt
+3 celulas_tronco.txt
 ```
